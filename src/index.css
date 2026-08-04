@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/*
+ * The iframe embed ships Tailwind's preflight + typography, and operator
+ * `customCss` is written against those class names (`.prose`, `bg-black/5`,
+ * `space-y-2 > div`, `button[aria-label="Send message"]`). This demo keeps the
+ * same class names and aria labels so a customer's existing customCss keeps
+ * working unchanged.
+ */
+
+html,
+body,
+#root {
+  height: 100%;
+}
